@@ -9,12 +9,6 @@ class CmsController extends CmsControllerCore
      */
     public function initContent()
     {
-        if (!empty($this->cms->CMS_IMG)) {
-            $this->context->smarty->assign(
-               'cms_image',
-               _PS_IMG_.'cms/'.$this->cms->CMS_IMG
-            );
-        }
         
         $this->getBlog();
         
